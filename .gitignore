@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MyStarterKit.Models/bin/Debug/net5.0
+/.vs/MyStarterKit/v16
+/MyStarterKit.Models/obj
