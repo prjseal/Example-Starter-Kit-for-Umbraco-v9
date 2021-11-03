@@ -4,6 +4,8 @@
 	Layout = null;
 }
 
+@using MyStarterKit.Core.Extensions 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,10 +14,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title></title>
     <!--css here-->
-    <!--<link rel="stylesheet" type="text/css" href="/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="/mystarterkit-assets/default.css">
 </head>
 <body>
     @RenderBody()
+
+    <p>Content Id is: @Model.GetContentId()</p>
 </body>
 </html>
 

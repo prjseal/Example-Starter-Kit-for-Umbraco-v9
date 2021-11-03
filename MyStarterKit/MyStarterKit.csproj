@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Version>1.0.0</Version>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Paul Seal</Authors>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>MyStarterKit</Product>
+    <PackageId>MyStarterKit</PackageId>
+    <Title>MyStarterKit</Title>
+    <Description>MyStarterKit for Umbraco</Description>
+    <PackageProjectUrl>https://github.com/prjseal/Example-Starter-Kit-for-Umbraco-v9</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageIconUrl>https://github.com/prjseal/Example-Starter-Kit-for-Umbraco-v9/blob/main/images/logo.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/prjseal/Example-Starter-Kit-for-Umbraco-v9</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="build\**\*.*">
+      <Pack>True</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+
+    <Content Include="wwwroot\mystarterkit-assets\**\*.*">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <None Remove="Views\Partials\blocklist\default.cshtml" />
+
+    <Content Include="Views\**\*.*">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <None Remove="Migrations\package.zip" />
+    <EmbeddedResource Include="Migrations\package.zip" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.0.1" />
+    <PackageReference Include="MyStarterKit.Core" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../images/logo.png" Pack="true" PackPath="\" />
+  </ItemGroup>
+
+</Project>

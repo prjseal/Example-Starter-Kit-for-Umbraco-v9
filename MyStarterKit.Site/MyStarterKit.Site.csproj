@@ -32,6 +32,7 @@
 
 
     <ItemGroup>
+      <ProjectReference Include="..\MyStarterKit.Core\MyStarterKit.Core.csproj" />
       <ProjectReference Include="..\MyStarterKit.Models\MyStarterKit.Models.csproj" />
     </ItemGroup>
 

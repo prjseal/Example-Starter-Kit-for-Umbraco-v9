@@ -5,3 +5,5 @@
 /MyStarterKit.Models/bin/Debug/net5.0
 /.vs/MyStarterKit/v16
 /MyStarterKit.Models/obj
+/MyStarterKit.Core/bin/Debug/net5.0
+/MyStarterKit.Core/obj
