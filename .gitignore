@@ -2,8 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/MyStarterKit.Models/bin/Debug/net5.0
-/.vs/MyStarterKit/v16
-/MyStarterKit.Models/obj
-/MyStarterKit.Core/bin/Debug/net5.0
-/MyStarterKit.Core/obj
+/MyStarterKit.Models/bin/
+/.vs
+/MyStarterKit.Models/obj/
+/MyStarterKit.Core/bin/
+/MyStarterKit.Core/obj/
+/MyStarterKit/bin/
+/MyStarterKit/obj/
+/*.nupkg
